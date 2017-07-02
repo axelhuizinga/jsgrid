@@ -425,7 +425,7 @@
                 .append($insertRow);
 
             var $header = this._header = $("<div>").addClass(this.gridHeaderClass)
-                .addClass(this._scrollBarWidth() ? "jsgrid-header-scrollbar" : "")
+                .css({paddingRight: this._scrollBarWidth() + "px"})
                 .append($headerGrid);
 
             return $header;
